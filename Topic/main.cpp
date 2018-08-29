@@ -71,7 +71,16 @@ struct Topic{
         return INVALID;
     }
 
+    bool alreadyIS(string nome){
+        for(int i = 0; i < lot; i++){
+            if(cadeiras[i].cliente.id == nome)
+                return true;
+        }
+        return false;
+    }
+
     bool insert(string id, int idade){
+
         int index;
         if(idade < 60){
             index = getNormalIndex();
@@ -139,10 +148,14 @@ struct Controller{
         }
 
         if( op == "in"){
+
             string nome;
             int idade;
             in >> nome >> idade;
-            topic.insert(nome, idade)? out << "done" : out << "fail: Topic lotada";
+            if(!topic.alreadyIS(nome))
+                topic.insert(nome, idade)? out << "done" : out << "fail: Topic lotada";
+            else
+                out << "fail: " << nome << " ja esta na topic";
         }
 
         if(op == "show")
@@ -151,7 +164,7 @@ struct Controller{
         if(op == "out"){
             string nome;
             in >> nome;
-            topic.remove(nome)? out << "done" : out << "fail: " << nome << "nao está na topic";
+            topic.remove(nome)? out << "done" : out << "fail: " << nome << " nao está na topic";
         }
 
 
@@ -164,7 +177,7 @@ struct Controller{
             getline(cin, line);
             if(line == "end")
                     return;
-            cout << shell(line) << "!" << endl;
+            cout << "    " << shell(line)<< endl;
 
         }
     }
