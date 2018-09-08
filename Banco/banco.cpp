@@ -8,96 +8,101 @@ using namespace std;
 struct Operacao{
     int indice;
     string descricao;
-	float valor;
-	float saldo;
+    float valor;
+    float saldo;
 
     Operacao(int _id, string desc, float val, float sal): indice(_id),descricao(desc), valor(val), saldo(sal){
     }
 
     string toString(){
         stringstream ss;
-        ss << indice << ": " << setw(10) << descricao << ": " << setw(6) << valor << ": " << setw(6) << saldo;  
+        ss << setw(2) << indice << ": " << setw(10) << descricao << ": " << setw(6) << valor << ": " << setw(6) << saldo;
         return ss.str();
     }
 };
 
 struct Conta{
     int nextID;
-	int numero;
-	float saldo;
+    int numero;
+    float saldo;
     vector<Operacao> extrato;
 
     Conta(int id = 0, float saldo = 0) : numero(id), nextID(0), saldo(saldo){
-		pushOperation("abertura", 0, saldo);	
+        pushOperation("abertura", 0, saldo);
     }
 
-	string toString(){
-		stringstream s;
-		s << "conta: " << numero << " saldo: " << saldo;
-		return s.str();
-	}
+    string toString(){
+        stringstream s;
+        s << "conta: " << numero << " saldo: " << saldo;
+        return s.str();
+    }
 
-	void pushOperation(string label, float valor, float saldo){
-		extrato.push_back(Operacao(nextID, label, valor, saldo));
-		nextID += 1;
-	}
+    void pushOperation(string label, float valor, float saldo){
+        extrato.push_back(Operacao(nextID, label, valor, saldo));
+        nextID += 1;
+    }
 
 
-	bool debitar(string label, float value){
-		if (value > 0 && value <= saldo){
-				saldo -= value;
-				pushOperation(label, value, saldo);
-				return true;
-		}
-		return false;
+    bool debitar(string label, float value){
+        if (value > 0 /*&& value <= saldo*/){
+            if(label == "tarifa"){
+                saldo -= value;
+                pushOperation(label, -value, saldo);
+                return true;
+            }else if(value <= saldo){
+                saldo -= value;
+                pushOperation(label, -value, saldo);
+            return true;
+            }
+        }
+        return false;
 
-	}
+    }
 
-	bool creditar(string label, float value){
-		if (value > 0){
-			saldo += value;
-			pushOperation(label, value, saldo);
-			return true;
-		}
-		return false;
-	}
+    bool creditar(string label, float value){
+        if (value > 0){
+            saldo += value;
+            pushOperation(label, value, saldo);
+            return true;
+        }
+        return false;
+    }
 
-	bool tarifa(int i){
-		if(extrato[i].descricao == "tarifa"){
-			saldo += extrato[i].valor;
-			extrato.erase(extrato.begin()+i);
-			return true;
-		}
-		return false;
-	
-	}	
-	
-	string getExtratoN(int n){
-		stringstream ss;
-		if(n < 0)
-				return "nem prestou....";
+    bool extorno(int i){
+        if(extrato[i].descricao == "tarifa"){
+            saldo += -(extrato[i].valor);
+            pushOperation("extorno", -(extrato[i].valor), saldo);
+            return true;
+        }
+        return false;
+    }
 
-		int i = (int)extrato.size() - n;
-		for(; i < extrato.size(); i++){
-			ss << extrato[i].toString() << endl;
-		}
-		return ss.str();
-	}
-	
-	/*string Extrato(){
-		stringstream ss;
-		for(int i = 0; i < extrato.size(); i++){
-			ss << extrato[i].toString() << endl;
-		}
-		return ss.str();
-	} //retorna as última n operacoes
-	*/
+    string extratoN(int n){
+        stringstream ss;
+        if(n < 0 || n > extrato.size())
+                return "failure: indice invalido";
+        ss << endl;
+        for(int i  = (extrato.size() - n); i < extrato.size(); i++){
+            ss << extrato[i].toString() << endl;
+        }
+        return ss.str();
+    }
+
+    string show_extrato(){
+        stringstream ss;
+        ss << endl;
+        for(int i = 0; i < (int )extrato.size(); i++){
+            ss << extrato[i].toString() << endl;
+        }
+        return ss.str();
+    }
+
 
 };
 
 
 struct Controller{
-	Conta conta;
+    Conta conta;
     string shell(string line){
         stringstream in(line);
         stringstream out;
@@ -105,29 +110,40 @@ struct Controller{
         in >> op;
         if(op == "help")
             out << "show; init <numero>; deposito <valor>; saque <valor>; tarifa <valor>; extrono <id>; extrato <int> ; end";
-        else if(op == "init"){            
-			int numero;
+        else if(op == "init"){
+            int numero;
             in >> numero;
-			conta =Conta(numero);
+            conta =Conta(numero);
             out << "success";
         }else if(op == "show"){
-			out << conta.toString();
+            out << conta.toString();
         }else if(op == "deposito"){
-			float valor;
+            float valor;
             in >> valor;
-			conta.creditar(op, valor);
+            conta.creditar(op, valor) ? out << "success" : out << "failure: valor inválido";
         }else if(op == "saque"){
-			float valor;
+            float valor;
             in >> valor;
-			conta.debitar(op, valor);
-        }/*else if(op == "tarifa"){
-            string id;
+            conta.debitar(op, valor) ? out << "success" : out << "failure: saldo insuficiente";
+        }else if(op == "tarifa"){
+            float valor;
+            in >> valor;
+            conta.debitar(op, valor)? out << "success" : out  << "failure: saldo insuficiente";
         }else if(op == "extorno"){
-            string id;
-        }else if(op == "extrato"){
-            string id;*/
+            int valor;
+            in >> valor;
+            conta.extorno(valor) ? out << "success: indice " << valor << " extornado" << endl : out << "failure: indice " << valor <<" invalido";
+            while(in >> valor)
+            conta.extorno(valor) ? out << "\n  success: indice " << valor << " extornado" : out << "\n  failure: indice " << valor <<" invalido";
+        }else if(op == "extratoN"){
+            int valor;
+            in >> valor;
+            out << conta.extratoN(valor);
+        }else if(op == "extrato")
+            out << conta.show_extrato();
         return out.str();
     }
+
 
     void exec(){
         string line;
@@ -142,7 +158,9 @@ struct Controller{
 };
 
 int main(){
-	Controller cont;
-	cont.exec();
+    Controller cont;
+    cont.exec();
     return 0;
 }
+
+
