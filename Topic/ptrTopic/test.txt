@@ -1,0 +1,7 @@
+init 2 1 
+in jp 21
+in vic 88 
+show
+out vic 
+show
+end
