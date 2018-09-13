@@ -68,18 +68,23 @@ public:
     }
     void incEnergy(int e = 1){
         (e + energy) < energyMax ? energy += e : energy = energyMax ;
+        if(energy < 0) energy = 0 ;
     }
     void setEnergy(int e){
         (e < energyMax) ? energy = e : energy = energyMax;
+        if(energy < 0) energy = 0 ;
     }
     void setClean(int c){
         (c < cleanMax) ? clean = c : clean = cleanMax;
+        if(clean < 0) clean = 0 ;
     }
     void incHungry(int h = 1){
         (h + hungry) < hungryMax ? hungry += h : hungry = hungryMax ;
+        if(hungry < 0) hungry = 0 ;
     }
     void incClean(int c = 1){
         (c + clean) < cleanMax ? clean += c : clean = cleanMax ;
+        if(clean < 0) clean = 0 ;
     }
 
     int checkDeath(){
