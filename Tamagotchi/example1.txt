@@ -1,0 +1,25 @@
+init 20 10 15
+show
+play
+show
+play
+show
+eat
+show
+sleep
+show
+clean
+show
+sleep
+play
+play
+play
+play
+show
+play
+show
+play
+eat
+clean
+sleep
+end

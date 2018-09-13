@@ -1,0 +1,48 @@
+init 20 10 15
+  success
+show
+  E:20/20, H:10/10, C:15/15, D:0, A:0
+play
+  
+show
+  E:18/20, H:9/10, C:12/15, D:1, A:1
+play
+  
+show
+  E:16/20, H:8/10, C:9/15, D:2, A:2
+eat
+  
+show
+  E:15/20, H:10/10, C:7/15, D:2, A:3
+sleep
+  
+show
+  E:20/20, H:9/10, C:7/15, D:2, A:8
+clean
+  
+show
+  E:17/20, H:8/10, C:15/15, D:2, A:10
+sleep
+  fail: não está com sono
+play
+  
+play
+  
+play
+  
+play
+  
+show
+  E:9/20, H:4/10, C:3/15, D:6, A:14
+play
+  fail: pet morreu de sujeira
+show
+  E:7/20, H:3/10, C:0/15, D:7, A:15
+play
+  fail: pet morreu
+eat
+  fail: pet morreu
+clean
+  fail: pet morreu
+sleep
+  fail: pet morreu
