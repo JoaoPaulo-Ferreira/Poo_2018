@@ -1,0 +1,7 @@
+init 500
+add cli maria maria dos anjos
+add cli maria maria luisa fernandes
+add tr maria -200
+add cli jose jose pedro
+add tr jose -10
+end

@@ -4,11 +4,11 @@
 #include <iostream>
 
 class Transacao{
-	int tID;
-	std::string clienteID;
+	std::string Transacao_ID;
+	std::string Client_ID;
+	int index = 0;
 public:
 	Transacao();
-	Transacao(int, std::string);
+	Transacao(std::string, std::string, int);
 };
-
-#endif // TRANSACAO_H
+#endif //TRANSACAO_H

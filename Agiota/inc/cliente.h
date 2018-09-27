@@ -4,12 +4,12 @@
 #include <iostream>
 
 class Cliente{
-		std::string cID;
-		std::string nome;
+		std::string Client_ID;
+		std::string Client_nome;
 		int dividaAtual;
 public:
 	Cliente();
 	Cliente(std::string, std::string , int );
+	Cliente(std::string, std::string);
 };
-
-#endif // CLIENTE_H
+#endif //SISTEMA_H
