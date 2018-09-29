@@ -4,4 +4,20 @@ add cli maria maria luisa fernandes
 add tr maria -200
 add cli jose jose pedro
 add tr jose -10
+add tr maria -500
+show cli
+add tr jose -200
+add tr jose -1
+add tr maria -100
+show tr
+show jose
+add tr jose -1000
+add tr jose 212
+add tr jose 211
+show maria
+show jose
+show tr
+matar jose
+show cli
+show tr
 end

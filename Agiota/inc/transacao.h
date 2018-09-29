@@ -2,13 +2,16 @@
 #define TRANSACAO_H
 
 #include <iostream>
+#include <sstream>
+#include <cstdlib>
 
 class Transacao{
-	std::string Transacao_ID;
+	public:
 	std::string Client_ID;
+	int value;
 	int index = 0;
-public:
 	Transacao();
 	Transacao(std::string, std::string, int);
+	std::string toString();
 };
 #endif //TRANSACAO_H
