@@ -15,8 +15,6 @@ class Sistema{
 	Sistema();
 	Sistema(int);
 	void TR_validate(std::string, int);	
-	// void Tr_add(std::string , std::string );
-	// void Cli_add(std::string,std::string);
 };
 
 #endif // SISTEMA_H

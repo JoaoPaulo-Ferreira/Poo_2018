@@ -88,24 +88,10 @@ void Controller::exec(){
 			   	break;
 		std::cout << line << std::endl;
 		try{
-		std::cout/* << "  " */<< shell(line) << std::endl;
-		// std::cout << line << std::endl;
+		std::cout<< shell(line) << std::endl;
 		}catch(const char *e){
 			std::cout << e << std::endl;
- 			// switch(e){
-			// 	case C_EXIST:
-			// 		std::cout << "id already exist" << std::endl;
-			// 	break;
-			// 	case T_EXIST:
-			// 		std::cout << "transaction already exist" << std::endl;
-			// 		break;
-			// 	case ADD_TYPE_INVALID:
-			// 		std::cout << "invalid add type" << std::endl;
-			// 		break;
-			// 	default:
-			// 		std::cout << "default switch try catch" << std::endl;
-
-			// }
+ 			
 		}
     }
 }

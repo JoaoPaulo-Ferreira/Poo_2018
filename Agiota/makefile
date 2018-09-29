@@ -28,3 +28,6 @@ transacao.o:
 
 run:
 	@${BIN}App < test.txt
+
+clean: 
+	rm -rf $(OBJ)*.o
