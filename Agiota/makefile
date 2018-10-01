@@ -17,9 +17,6 @@ controller.o: cliente.o transacao.o sistema.o
 sistema.o: cliente.o transacao.o #rep.o
 	${CC} ${CPPFLAGS} ${IPATH} -c ${SRC}sistema.cpp -o ${OBJ}sistema.o -lm 
 
-#rep.o:
-#	${CC} ${CPPFLAGS} ${IPATH} -c ${SRC}rep.cpp -o ${OBJ}rep.o -lm
-
 cliente.o:
 	${CC} ${CPPFLAGS} ${IPATH} -c ${SRC}cliente.cpp -o ${OBJ}cliente.o -lm
 
