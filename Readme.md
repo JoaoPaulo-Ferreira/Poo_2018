@@ -67,6 +67,18 @@
 
 -Aprendi a utilizar makefile e a programar de forma modular usando o C++. Aprendi também que ficar usando "std::" é chato.
 
--Um pouco. A lógica do repositório ainda ta meio nebulosa na minha cabeça... Também comecei a usar o map e isso complicou ainda mais o projeto.
+-Bastante. A lógica do repositório ainda ta meio nebulosa na minha cabeça... Também comecei a usar o map e isso complicou ainda mais o projeto.
 
--Uma semana.
+-Duas semanas.
+
+# Repositório #
+
+-Tudo.
+
+-Sozinho.
+
+-Comparado com a utilização do repositorio no Agiota, foi moleza. Claro que vez ou outra precisava voltar no Agiota pra relembrar alguma coisa, mas de resto foi tranquilo.
+
+-Esse foi de boas. Foi muito mais simples que o Agiota.
+
+-3 horas.
