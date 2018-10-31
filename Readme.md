@@ -82,3 +82,16 @@
 -Esse foi de boas. Foi muito mais simples que o Agiota.
 
 -3 horas.
+
+
+# Anotações #
+
+-Tudo.
+
+-Sozinho.
+
+-Aprendi que depois que a gnt entende, o gerenciador de login ajuda demais!!
+
+-Demorei um pouco pois perdi a aula... O vídeo do Youtube esta com alguns errinhos, dai confundiu na hora de criar o gerenciador de login, mas deu certo
+
+-4 horas.

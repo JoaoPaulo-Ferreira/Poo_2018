@@ -1,0 +1,15 @@
+addProf Maria E
+addProf Maria C
+addProf Paloma D
+addProf Jotinha C
+addProf Veim B
+addProf Zinzu A
+addDiaria Jotinha
+show Jotinha
+rm Maria
+showAll
+setBonus 600
+show Jotinha
+setBonus 100
+show Jotinha
+end

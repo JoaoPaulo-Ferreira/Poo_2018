@@ -1,0 +1,203 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BIN	Agiota/makefile	/^BIN=bin\/$/;"	m
+CC	Agiota/makefile	/^CC=g++$/;"	m
+CLIENTE_H	Agiota/inc/cliente.h	2;"	d
+CONTROLLER_H	Agiota/inc/controller.h	2;"	d
+CPPFLAGS	Agiota/makefile	/^CPPFLAGS=-Wall -std=c++14 -pedantic -c$/;"	m
+CPPFLAGS	Cinema/makefile	/^CPPFLAGS = -Wall -std=c++14$/;"	m
+CPPFLAGS	Tamagotchi/makefile	/^CPPFLAGS = -std=c++14 -Wall$/;"	m
+Cadeira	Topic/main.cpp	/^    Cadeira(char estado = '@'){$/;"	f	struct:Cadeira
+Cadeira	Topic/main.cpp	/^struct Cadeira{$/;"	s	file:
+Carro	Carro/main.cpp	/^    Carro(int _pass = 0, float _gas = 0, float _km = 0){$/;"	f	struct:Carro
+Carro	Carro/main.cpp	/^struct Carro{$/;"	s	file:
+Cliente	Agiota/inc/cliente.h	/^class Cliente{$/;"	c
+Cliente	Agiota/src/cliente.cpp	/^Cliente::Cliente(){}$/;"	f	class:Cliente
+Cliente	Agiota/src/cliente.cpp	/^Cliente::Cliente(std::string id, std::string name, int divida = 0){$/;"	f	class:Cliente
+Cliente	Cinema/main.cpp	/^    Cliente(string id = "fulano", string fone = "0000"){$/;"	f	struct:Cliente
+Cliente	Cinema/main.cpp	/^struct Cliente{$/;"	s	file:
+Cliente	Topic/main.cpp	/^    Cliente(string id = "lero", int idade = 0){$/;"	f	struct:Cliente
+Cliente	Topic/main.cpp	/^struct Cliente{$/;"	s	file:
+Cliente	Topic/ptrTopic/main.cpp	/^    Cliente(string id = "lero", int idade = 0){$/;"	f	struct:Cliente
+Cliente	Topic/ptrTopic/main.cpp	/^struct Cliente{$/;"	s	file:
+Conta	Banco/banco.cpp	/^    Conta(int id = 0, float saldo = 0) : numero(id), nextID(0), saldo(saldo){$/;"	f	struct:Conta
+Conta	Banco/banco.cpp	/^struct Conta{$/;"	s	file:
+Contato	Contato/main.cpp	/^    Contato(string id = "vazio"):$/;"	f	class:Contato
+Contato	Contato/main.cpp	/^class Contato{$/;"	c	file:
+Controller	Agiota/inc/controller.h	/^class Controller{$/;"	c
+Controller	Agiota/src/controller.cpp	/^Controller::Controller(){}$/;"	f	class:Controller
+Controller	Banco/banco.cpp	/^struct Controller{$/;"	s	file:
+Controller	Contato/main.cpp	/^struct Controller{$/;"	s	file:
+Controller	Tamagotchi/main.cpp	/^struct Controller{$/;"	s	file:
+Controller	Topic/main.cpp	/^struct Controller{$/;"	s	file:
+Controller	Topic/ptrTopic/main.cpp	/^struct Controller{$/;"	s	file:
+DIED_CLEAN	Tamagotchi/main.cpp	/^    DIED_CLEAN=4,$/;"	e	enum:__anon1	file:
+DIED_ENEGEY	Tamagotchi/main.cpp	/^    DIED_ENEGEY=1,$/;"	e	enum:__anon1	file:
+DIED_ENERGY_CLEAN	Tamagotchi/main.cpp	/^    DIED_ENERGY_CLEAN=5,$/;"	e	enum:__anon1	file:
+DIED_ENERGY_HUNGRY	Tamagotchi/main.cpp	/^    DIED_ENERGY_HUNGRY=3,$/;"	e	enum:__anon1	file:
+DIED_HUNGRY	Tamagotchi/main.cpp	/^    DIED_HUNGRY=2,$/;"	e	enum:__anon1	file:
+DIED_HUNGRY_CLEAN	Tamagotchi/main.cpp	/^    DIED_HUNGRY_CLEAN=6,$/;"	e	enum:__anon1	file:
+DIED_HUNGRY_CLEAN_ENERGY	Tamagotchi/main.cpp	/^    DIED_HUNGRY_CLEAN_ENERGY=7$/;"	e	enum:__anon1	file:
+Fone	Contato/main.cpp	/^    Fone(string id = "", string fone = ""):$/;"	f	struct:Fone
+Fone	Contato/main.cpp	/^struct Fone{$/;"	s	file:
+INVALID	Topic/main.cpp	5;"	d	file:
+INVALID	Topic/ptrTopic/main.cpp	6;"	d	file:
+IPATH	Agiota/makefile	/^IPATH=-I inc\/$/;"	m
+ISNT_SLEEPY	Tamagotchi/main.cpp	/^    ISNT_SLEEPY=-2,$/;"	e	enum:__anon1	file:
+IS_ALIVE	Tamagotchi/main.cpp	/^    IS_ALIVE=0,$/;"	e	enum:__anon1	file:
+IS_DEAD	Tamagotchi/main.cpp	/^    IS_DEAD=-1,$/;"	e	enum:__anon1	file:
+OBJ	Agiota/makefile	/^OBJ=obj\/$/;"	m
+Operacao	Banco/banco.cpp	/^    Operacao(int _id, string desc, float val, float sal): indice(_id),descricao(desc), valor(val), saldo(sal){$/;"	f	struct:Operacao
+Operacao	Banco/banco.cpp	/^struct Operacao{$/;"	s	file:
+Pet	Tamagotchi/main.cpp	/^    Pet(){}$/;"	f	class:Pet
+Pet	Tamagotchi/main.cpp	/^    Pet(int e, int h, int c){$/;"	f	class:Pet
+Pet	Tamagotchi/main.cpp	/^class Pet{$/;"	c	file:
+SISTEMA_H	Agiota/inc/sistema.h	2;"	d
+SRC	Agiota/makefile	/^SRC=src\/$/;"	m
+Sala	Cinema/main.cpp	/^    Sala(int qtd = 0){$/;"	f	struct:Sala
+Sala	Cinema/main.cpp	/^struct Sala{$/;"	s	file:
+Sistema	Agiota/inc/sistema.h	/^class Sistema{$/;"	c
+Sistema	Agiota/src/sistema.cpp	/^Sistema::Sistema(){}$/;"	f	class:Sistema
+Sistema	Agiota/src/sistema.cpp	/^Sistema::Sistema(int grana){$/;"	f	class:Sistema
+TRANSACAO_H	Agiota/inc/transacao.h	2;"	d
+Topic	Topic/main.cpp	/^    Topic(int lot = 0, int pref = 0){$/;"	f	struct:Topic
+Topic	Topic/main.cpp	/^struct Topic{$/;"	s	file:
+Topic	Topic/ptrTopic/main.cpp	/^    Topic(int lot = 0, int pref = 0) : cadeiras(lot, nullptr), pref(pref){$/;"	f	struct:Topic
+Topic	Topic/ptrTopic/main.cpp	/^struct Topic{$/;"	s	file:
+Transacao	Agiota/inc/transacao.h	/^class Transacao{$/;"	c
+Transacao	Agiota/src/transacao.cpp	/^Transacao::Transacao(){}$/;"	f	class:Transacao
+Transacao	Agiota/src/transacao.cpp	/^Transacao::Transacao(int id, std::string cID){$/;"	f	class:Transacao
+abastecer	Carro/main.cpp	/^    void abastecer(float newGas){$/;"	f	struct:Carro
+add	Contato/main.cpp	/^    void add(Fone fone){$/;"	f	class:Contato
+age	Tamagotchi/main.cpp	/^    int age;$/;"	m	class:Pet	file:
+alreadyIS	Topic/main.cpp	/^    bool alreadyIS(string nome){$/;"	f	struct:Topic
+alreadyIS	Topic/ptrTopic/main.cpp	/^    bool alreadyIS(string nome){$/;"	f	struct:Topic
+andar	Carro/main.cpp	/^    void andar(float distance){$/;"	f	struct:Carro
+cID	Agiota/inc/cliente.h	/^		std::string cID;$/;"	m	class:Cliente
+cadeiras	Cinema/main.cpp	/^    vector< Cliente * > cadeiras;$/;"	m	struct:Sala	file:
+cadeiras	Topic/main.cpp	/^    vector<Cadeira> cadeiras;$/;"	m	struct:Topic	file:
+cadeiras	Topic/ptrTopic/main.cpp	/^    vector<Cliente *> cadeiras;$/;"	m	struct:Topic	file:
+checkDeath	Tamagotchi/main.cpp	/^    int checkDeath(){$/;"	f	class:Pet
+clean	Tamagotchi/main.cpp	/^    int clean;$/;"	m	class:Pet	file:
+cleanMax	Tamagotchi/main.cpp	/^    int cleanMax;$/;"	m	class:Pet	file:
+cliente	Topic/main.cpp	/^    Cliente cliente;$/;"	m	struct:Cadeira	file:
+clienteID	Agiota/inc/transacao.h	/^	std::string clienteID;$/;"	m	class:Transacao
+clientes	Agiota/inc/sistema.h	/^	std::vector<Cliente> clientes;$/;"	m	class:Sistema
+cont	Contato/main.cpp	/^    Contato cont;$/;"	m	struct:Controller	file:
+conta	Banco/banco.cpp	/^    Conta conta;$/;"	m	struct:Controller	file:
+creditar	Banco/banco.cpp	/^    bool creditar(string label, float value){$/;"	f	struct:Conta
+debitar	Banco/banco.cpp	/^    bool debitar(string label, float value){$/;"	f	struct:Conta
+descricao	Banco/banco.cpp	/^    string descricao;$/;"	m	struct:Operacao	file:
+desembarque	Carro/main.cpp	/^    void desembarque(){$/;"	f	struct:Carro
+diamonds	Tamagotchi/main.cpp	/^    int diamonds;$/;"	m	class:Pet	file:
+dividaAtual	Agiota/inc/cliente.h	/^		int dividaAtual;$/;"	m	class:Cliente
+embarque	Carro/main.cpp	/^    void embarque(){$/;"	f	struct:Carro
+energy	Tamagotchi/main.cpp	/^    int energy;$/;"	m	class:Pet	file:
+energyMax	Tamagotchi/main.cpp	/^    int energyMax;$/;"	m	class:Pet	file:
+estado	Topic/main.cpp	/^    char estado;$/;"	m	struct:Cadeira	file:
+exec	Agiota/src/controller.cpp	/^void Controller::exec(){$/;"	f	class:Controller
+exec	Banco/banco.cpp	/^    void exec(){$/;"	f	struct:Controller
+exec	Contato/main.cpp	/^    void exec(){$/;"	f	struct:Controller
+exec	Tamagotchi/main.cpp	/^    void exec(){$/;"	f	struct:Controller
+exec	Topic/main.cpp	/^    void exec(){$/;"	f	struct:Controller
+exec	Topic/ptrTopic/main.cpp	/^    void exec(){$/;"	f	struct:Controller
+existe	Cinema/main.cpp	/^    bool existe(int id){$/;"	f	struct:Sala
+extorno	Banco/banco.cpp	/^    bool extorno(int i){$/;"	f	struct:Conta
+extrato	Banco/banco.cpp	/^    vector<Operacao> extrato;$/;"	m	struct:Conta	file:
+extratoN	Banco/banco.cpp	/^    string extratoN(int n){$/;"	f	struct:Conta
+fone	Cinema/main.cpp	/^    string fone;$/;"	m	struct:Cliente	file:
+fone	Contato/main.cpp	/^    string fone;$/;"	m	struct:Fone	file:
+fones	Contato/main.cpp	/^    vector<Fone> fones;$/;"	m	class:Contato	file:
+gas	Carro/main.cpp	/^    float gas;$/;"	m	struct:Carro	file:
+getAge	Tamagotchi/main.cpp	/^    int getAge(){$/;"	f	class:Pet
+getClean	Tamagotchi/main.cpp	/^    int getClean(){$/;"	f	class:Pet
+getCleanMax	Tamagotchi/main.cpp	/^    int getCleanMax(){$/;"	f	class:Pet
+getDiamonds	Tamagotchi/main.cpp	/^    int getDiamonds(){$/;"	f	class:Pet
+getEnergy	Tamagotchi/main.cpp	/^    int getEnergy(){$/;"	f	class:Pet
+getEnergyMax	Tamagotchi/main.cpp	/^    int getEnergyMax(){$/;"	f	class:Pet
+getHungry	Tamagotchi/main.cpp	/^    int getHungry(){$/;"	f	class:Pet
+getHungryMax	Tamagotchi/main.cpp	/^    int getHungryMax(){$/;"	f	class:Pet
+getNormalIndex	Topic/main.cpp	/^    int getNormalIndex(){$/;"	f	struct:Topic
+getNormalIndex	Topic/ptrTopic/main.cpp	/^    int getNormalIndex(){$/;"	f	struct:Topic
+getPriorIndex	Topic/main.cpp	/^    int getPriorIndex(){$/;"	f	struct:Topic
+getPriorIndex	Topic/ptrTopic/main.cpp	/^    int getPriorIndex(){$/;"	f	struct:Topic
+granaTotal	Agiota/inc/sistema.h	/^	int granaTotal;$/;"	m	class:Sistema
+hungry	Tamagotchi/main.cpp	/^    int hungry;$/;"	m	class:Pet	file:
+hungryMax	Tamagotchi/main.cpp	/^    int hungryMax;$/;"	m	class:Pet	file:
+id	Cinema/main.cpp	/^    string id;$/;"	m	struct:Cliente	file:
+id	Contato/main.cpp	/^    string id;$/;"	m	class:Contato	file:
+id	Contato/main.cpp	/^    string id;$/;"	m	struct:Fone	file:
+id	Topic/main.cpp	/^    string id;$/;"	m	struct:Cliente	file:
+id	Topic/ptrTopic/main.cpp	/^    string id;$/;"	m	struct:Cliente	file:
+idade	Topic/main.cpp	/^    int idade;$/;"	m	struct:Cliente	file:
+idade	Topic/ptrTopic/main.cpp	/^    int idade;$/;"	m	struct:Cliente	file:
+incAge	Tamagotchi/main.cpp	/^    void incAge(int i = 1){$/;"	f	class:Pet
+incClean	Tamagotchi/main.cpp	/^    void incClean(int c = 1){$/;"	f	class:Pet
+incDiamonds	Tamagotchi/main.cpp	/^    void incDiamonds(int i = 1){$/;"	f	class:Pet
+incEnergy	Tamagotchi/main.cpp	/^    void incEnergy(int e = 1){$/;"	f	class:Pet
+incHungry	Tamagotchi/main.cpp	/^    void incHungry(int h = 1){$/;"	f	class:Pet
+indice	Banco/banco.cpp	/^    int indice;$/;"	m	struct:Operacao	file:
+insert	Topic/main.cpp	/^    bool insert(string id, int idade){$/;"	f	struct:Topic
+insert	Topic/ptrTopic/main.cpp	/^    bool insert(string id, int idade){$/;"	f	struct:Topic
+km	Carro/main.cpp	/^    float km;$/;"	m	struct:Carro	file:
+lot	Topic/main.cpp	/^    int lot;$/;"	m	struct:Topic	file:
+main	Agiota/src/main.cpp	/^int main(){$/;"	f
+main	Banco/banco.cpp	/^int main(){$/;"	f
+main	Carro/main.cpp	/^int main(){$/;"	f
+main	Cinema/main.cpp	/^int main(){$/;"	f
+main	Contato/main.cpp	/^int main(){$/;"	f
+main	Tamagotchi/main.cpp	/^int main(){$/;"	f
+main	Topic/main.cpp	/^int main(){$/;"	f
+main	Topic/ptrTopic/main.cpp	/^int main(){$/;"	f
+maxGAS	Carro/main.cpp	7;"	d	file:
+maxPASS	Carro/main.cpp	6;"	d	file:
+nextID	Banco/banco.cpp	/^    int nextID;$/;"	m	struct:Conta	file:
+nome	Agiota/inc/cliente.h	/^		std::string nome;$/;"	m	class:Cliente
+numero	Banco/banco.cpp	/^    int numero;$/;"	m	struct:Conta	file:
+pass	Carro/main.cpp	/^    int pass;$/;"	m	struct:Carro	file:
+pet	Tamagotchi/main.cpp	/^    Pet pet;$/;"	m	struct:Controller	file:
+pref	Topic/main.cpp	/^    int pref;$/;"	m	struct:Topic	file:
+pref	Topic/ptrTopic/main.cpp	/^    int pref;$/;"	m	struct:Topic	file:
+pushOperation	Banco/banco.cpp	/^    void pushOperation(string label, float valor, float saldo){$/;"	f	struct:Conta
+remove	Topic/main.cpp	/^    bool remove(string nome){$/;"	f	struct:Topic
+remove	Topic/ptrTopic/main.cpp	/^    bool remove(string nome){$/;"	f	struct:Topic
+reservar	Cinema/main.cpp	/^    bool reservar(Cliente *cliente, int ind){$/;"	f	struct:Sala
+rm	Contato/main.cpp	/^    void rm(string foneId){$/;"	f	class:Contato
+saldo	Banco/banco.cpp	/^    float saldo;$/;"	m	struct:Conta	file:
+saldo	Banco/banco.cpp	/^    float saldo;$/;"	m	struct:Operacao	file:
+setClean	Tamagotchi/main.cpp	/^    void setClean(int c){$/;"	f	class:Pet
+setEnergy	Tamagotchi/main.cpp	/^    void setEnergy(int e){$/;"	f	class:Pet
+shell	Agiota/src/controller.cpp	/^std::string Controller::shell(std::string line){$/;"	f	class:Controller
+shell	Banco/banco.cpp	/^    string shell(string line){$/;"	f	struct:Controller
+shell	Contato/main.cpp	/^    string shell(string line){$/;"	f	struct:Controller
+shell	Tamagotchi/main.cpp	/^    string shell(string line){$/;"	f	struct:Controller
+shell	Topic/main.cpp	/^    string shell(string request){$/;"	f	struct:Controller
+shell	Topic/ptrTopic/main.cpp	/^    string shell(string request){$/;"	f	struct:Controller
+show	Carro/main.cpp	/^    void show(){$/;"	f	struct:Carro
+show_extrato	Banco/banco.cpp	/^    string show_extrato(){$/;"	f	struct:Conta
+sistema	Agiota/inc/controller.h	/^	Sistema sistema;$/;"	m	class:Controller
+tID	Agiota/inc/transacao.h	/^	int tID;$/;"	m	class:Transacao
+toEat	Tamagotchi/main.cpp	/^    int toEat(){$/;"	f	class:Pet
+toPlay	Tamagotchi/main.cpp	/^    int toPlay(){$/;"	f	class:Pet
+toShower	Tamagotchi/main.cpp	/^    int toShower(){$/;"	f	class:Pet
+toSleep	Tamagotchi/main.cpp	/^    int toSleep(){$/;"	f	class:Pet
+toString	Banco/banco.cpp	/^    string toString(){$/;"	f	struct:Conta
+toString	Banco/banco.cpp	/^    string toString(){$/;"	f	struct:Operacao
+toString	Cinema/main.cpp	/^    string toString(){$/;"	f	struct:Cliente
+toString	Cinema/main.cpp	/^    string toString(){$/;"	f	struct:Sala
+toString	Contato/main.cpp	/^    string toString(){$/;"	f	class:Contato
+toString	Contato/main.cpp	/^    string toString(){$/;"	f	struct:Fone
+toString	Tamagotchi/main.cpp	/^    string toString(){$/;"	f	class:Pet
+toString	Topic/main.cpp	/^    string toString(){$/;"	f	struct:Topic
+toString	Topic/ptrTopic/main.cpp	/^    string toString(){$/;"	f	struct:Cliente
+toString	Topic/ptrTopic/main.cpp	/^    string toString(){$/;"	f	struct:Topic
+topic	Topic/main.cpp	/^    Topic topic;$/;"	m	struct:Controller	file:
+topic	Topic/ptrTopic/main.cpp	/^    Topic topic;$/;"	m	struct:Controller	file:
+transacoes	Agiota/inc/sistema.h	/^	std::vector<Transacao> transacoes; 	$/;"	m	class:Sistema
+translator	Tamagotchi/main.cpp	/^    string translator(int status){$/;"	f	class:Pet
+validateInit	Agiota/src/controller.cpp	/^bool Controller::validateInit(int cash){$/;"	f	class:Controller
+valor	Banco/banco.cpp	/^    float valor;$/;"	m	struct:Operacao	file:

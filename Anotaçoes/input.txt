@@ -1,0 +1,26 @@
+addUser jp 1234
+addUser veim 12345
+addUser jp 4321
+showUsers
+login jp 123
+login mt 12312
+login jp 1234
+changePass 1234 123
+addNote jp1 testando para apagar depois
+login veim 12345
+logout
+changePass 12345 1111
+addNote teste1 Ninguem Logado
+rmNote jp1
+login veim 12345
+addNote teste2 Done
+addNote teste2 titulo ja existe
+addNote teste3 so pra adicionar mais uma
+addNote teste4 agora é serio...
+addNote teste5 testar o show
+showNotes
+rmNote teste2
+rmNote teste2
+showNotes
+changePass 1111
+end
