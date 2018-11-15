@@ -95,3 +95,15 @@
 -Demorei um pouco pois perdi a aula... O vídeo do Youtube esta com alguns errinhos, dai confundiu na hora de criar o gerenciador de login, mas deu certo
 
 -4 horas.
+
+# Hospital #
+
+-Tudo.
+
+-Sozinho.
+
+-Treinei Herança.
+
+-Tive que fazer um cast em void * em determinado momento... kkkkk Achei esse trabalho muito divertido!!!
+
+-4 horas.
