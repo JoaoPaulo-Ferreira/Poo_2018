@@ -1,0 +1,18 @@
+addPats fred-fratura alvis-avc goku-hemorragia silva-sinusite
+addDocs bisturi-cirurgia snif-alergologia facada-cirurgia
+seeAll
+see fred
+see alvis
+see bisturi
+tie bisturi fred alvis goku
+tie snif silva alvis
+tie facada goku
+seeAll
+msg alvis bisturi posso tomar homeprazol?
+msg goku bisturi coceira no reto eh normal?
+inbox bisturi
+msg bisturi alvis chupe limao que passa
+msg bisturi goku venha na minha sala pra eu olhar
+inbox goku
+msg goku facada
+end
