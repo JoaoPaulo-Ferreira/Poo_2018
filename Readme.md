@@ -98,11 +98,11 @@
 
 # Hospital #
 
--Tudo.
+-Tudo do zero.
 
 -Sozinho.
 
--Treinei Herança.
+-Treinei Herança. Acho que não vou fazer o trem pois fiz este e o Salario do zero.. Ja deu. haha
 
 -Tive que fazer um cast em void * em determinado momento... kkkkk Achei esse trabalho muito divertido!!!
 
